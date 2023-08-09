@@ -15,6 +15,7 @@ export const ChillTwo: React.FC<ChillProps> = ({register, formRegistrationName, 
         <div>
           <input
             {...register(formRegistrationName, {required: true, maxLength: maxLength}) }
+            onBlur={() => console.log("onBlur")}
           />
         </div>
       )

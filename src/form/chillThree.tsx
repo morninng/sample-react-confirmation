@@ -15,13 +15,19 @@ export const ChillThree: React.FC<ChillProps> = React.forwardRef<HTMLInputElemen
 (
   ({onChange, name, onBlur}, ref: React.Ref<HTMLInputElement>) => {
 
+    const onChangeX = (e: React.ChangeEvent<HTMLInputElement>) => {
+      console.log("onChangeX")
+      onChange(e)
+    }
+
+
     return (
       <div>
         <input
           ref={ref}
           name={name}
           onBlur={onBlur} 
-          onChange={onChange}
+          onChange={onChangeX}
         />
       </div>
     )
