@@ -1,4 +1,5 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
 
 // interface SimpleProps<T extends string>
 //   extends React.HTMLProps<HTMLButtonElement> {
@@ -12,17 +13,20 @@ import React from 'react'
 // https://stackoverflow.com/questions/57750777/generics-error-with-forwardref-property-ref-does-not-exist-on-type-intrinsic
 
 interface ChillProps {
+  register: ReturnType<typeof useForm>['register']
+  formRegistrationName: string
   ref: React.Ref<HTMLInputElement>;
 }
 
 export const Chill: React.FC<ChillProps> = React.forwardRef<HTMLInputElement, ChillProps >
 (
-    (_, ref: React.Ref<HTMLInputElement>) => {
+    ({register, formRegistrationName}, _ref: React.Ref<HTMLInputElement>) => {
 
     return (
         <div>
           <input
-            ref={ref}
+            // ref={ref}
+            {...register(formRegistrationName)}
           />
         </div>
       )
