@@ -7,7 +7,7 @@ export const Parent: React.FC = () => {
     const reference = useRef<HTMLInputElement>(null);
   
     return (<form>
-      <Chill ref={reference} register={register}  />
+      <Chill ref={reference} register={register} formRegistrationName="sss"  />
       </form>
     )
   }
