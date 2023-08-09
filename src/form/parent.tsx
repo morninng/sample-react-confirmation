@@ -7,11 +7,15 @@ import { ChillThree } from './chillThree'
 export const Parent: React.FC = () => {
   const { register, handleSubmit, formState: {errors} } = useForm()
   const reference = useRef<HTMLInputElement>(null);
-  const { onChange, onBlur, name, ref } = register('thirdChill', {
+  const thirdChillOne = register('thirdChillOne', {
     required: true,
     maxLength: 2
   }); 
 
+  const thirdChillsTwo = register('thirdChillsTwo', {
+    required: true,
+    maxLength: 5
+  }); 
 
   const onSubmit = (data: any) => console.log(data)
   const aaa = "sss";
@@ -30,11 +34,11 @@ export const Parent: React.FC = () => {
 
 
 
-      <div>referenceを渡すほうほう。このやり方だと、別の名前のformようをを複数設定できなそう</div> 
-      <ChillThree ref={ref}  name={name} onBlur={onBlur} onChange={onChange}  />
-      <div>{errors && errors.thirdChill && <span>{"error " + String(errors.thirdChill.type)}</span>}</div>
+      <div>referenceを渡すほうほう。</div> 
+      <ChillThree ref={thirdChillOne.ref}  name={thirdChillOne.name} onBlur={thirdChillOne.onBlur} onChange={thirdChillOne.onChange}  />
+      <ChillThree ref={thirdChillsTwo.ref}  name={thirdChillsTwo.name} onBlur={thirdChillsTwo.onBlur} onChange={thirdChillsTwo.onChange}  />
+      <div>{errors && errors.thirdChillOne && <span>{"error " + String(errors.thirdChillOne.type)}</span>}</div>
 
-      
       <button type="submit">submit</button>
     </form>
   )
