@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Counter} from './counter/Counter'
 import {Parent} from './form/parent'
+import {Parent2} from './form2/parent2'
 
 function App() {
   return (
@@ -29,6 +30,13 @@ function App() {
         <br />
         <br />
         <Parent />
+
+        <br />
+        <br />
+        <br />
+
+
+        <Parent2 />
       </body>
     </div>
   );

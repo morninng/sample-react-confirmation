@@ -20,7 +20,6 @@ export const ChillThree: React.FC<ChillProps> = React.forwardRef<HTMLInputElemen
       onChange(e)
     }
 
-
     return (
       <div>
         <input
