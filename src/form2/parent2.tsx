@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
 import { Chitt } from './chitt'
+import { ChittSelectOption } from './chitt-select-option'
 
 export const Parent2: React.FC = () => {
   const methods = useForm()
@@ -19,8 +20,6 @@ export const Parent2: React.FC = () => {
 
 
 
-
-
   return (
     <FormProvider {...methods}>
       <div>parent2</div>
@@ -28,6 +27,7 @@ export const Parent2: React.FC = () => {
 
         <Chitt  formRegistrationName="hoge" maxLength={2} />
         <Chitt  formRegistrationName="fuga"  />
+        <ChittSelectOption />
 
         <button type="submit">submit</button>
       </form>
