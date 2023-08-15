@@ -21,16 +21,18 @@ export const Parent2: React.FC = () => {
 
 
   return (
-    <FormProvider {...methods}>
-      <div>parent2</div>
-      <form onSubmit={methods.handleSubmit(onSubmit)}>
+    <div>
+      <FormProvider {...methods}>
+        <div>parent2</div>
+        <form onSubmit={methods.handleSubmit(onSubmit)}>
 
-        <Chitt  formRegistrationName="hoge" maxLength={2} />
-        <Chitt  formRegistrationName="fuga"  />
-        <ChittSelectOption />
+          <Chitt  formRegistrationName="hoge" maxLength={2} />
+          <Chitt  formRegistrationName="fuga"  />
+          <ChittSelectOption />
 
-        <button type="submit">submit</button>
-      </form>
-    </FormProvider>
+          <button type="submit">submit</button>
+        </form>
+      </FormProvider>
+    </div>
   )
 }

@@ -23,7 +23,7 @@ function App() {
           Learn React
         </a> */}
       </header>
-      <body>
+      <div>
         sss
         <Counter />
         <br />
@@ -37,7 +37,7 @@ function App() {
 
 
         <Parent2 />
-      </body>
+      </div>
     </div>
   );
 }
