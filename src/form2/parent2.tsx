@@ -7,12 +7,12 @@ export const Parent2: React.FC = () => {
   const methods = useForm()
 
 
-  React.useEffect(() => {
-    const subscription = methods.watch((value, { name, type }) =>
-      console.log("ss", value, name, type)
-    )
-    return () => subscription.unsubscribe()
-  }, [methods.watch])
+  // React.useEffect(() => {
+  //   const subscription = methods.watch((value, { name, type }) =>
+  //     console.log("ss", value, name, type)
+  //   )
+  //   return () => subscription.unsubscribe()
+  // }, [methods.watch])
 
 
 
