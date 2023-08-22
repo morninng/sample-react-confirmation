@@ -16,8 +16,12 @@ export const Parent2: React.FC = () => {
 
 
 
-  const onSubmit = (data: any) => console.log("submit", data)
-
+  const onSubmit = (data: any) => {
+    console.log("submit", data)
+  } 
+  const ddd = () => {
+    methods.setValue("fuga", "ddd")
+  }
 
 
   return (
@@ -33,6 +37,7 @@ export const Parent2: React.FC = () => {
           <button type="submit">submit</button>
         </form>
       </FormProvider>
+      <button onClick={()=>{ddd()}}>ddd button</button>
     </div>
   )
 }
