@@ -4,6 +4,10 @@ import './App.css';
 import {Counter} from './counter/Counter'
 import {Parent} from './form/parent'
 import {Parent2} from './form2/parent2'
+import {CssModuleButton} from './style-test/css-module/'
+import {MakeStyleButton} from './style-test/make-style/'
+import {StyledComponentButton} from './style-test/styled-component/'
+
 
 function App() {
   return (
@@ -21,7 +25,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a> 
+        </a>
       </header>
       <div>
         sss
@@ -38,6 +42,13 @@ function App() {
 
         <Parent2 />
       </div>
+      <div>
+        <CssModuleButton />
+      </div>
+      <div>
+        <MakeStyleButton />
+      </div>
+      <StyledComponentButton />
     </div>
   );
 }
