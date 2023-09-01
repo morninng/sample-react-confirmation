@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         hhh
-        {/* <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -21,7 +21,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a> */}
+        </a> 
       </header>
       <div>
         sss
