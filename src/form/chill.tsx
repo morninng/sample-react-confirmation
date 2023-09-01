@@ -30,5 +30,6 @@ export const Chill: React.FC<ChillProps> = React.forwardRef<HTMLInputElement, Ch
     )
   }
 )
+Chill.displayName = 'Chill'
 // https://qiita.com/ryosuketter/items/1ebf2d68ba3317db53a9
 // https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom

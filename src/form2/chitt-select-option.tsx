@@ -3,7 +3,7 @@ import { MuiSelect } from './mui-select'
 import { MenuItem } from '@mui/material'
 
 
-export const ChittSelectOption: React.FC<{}> = () => {
+export const ChittSelectOption: React.FC = () => {
 
     return (
         <div>
@@ -16,4 +16,3 @@ export const ChittSelectOption: React.FC<{}> = () => {
         </div>
       )
   }
-
