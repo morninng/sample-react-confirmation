@@ -7,13 +7,13 @@ import {Parent2} from './form2/parent2'
 import {CssModuleButton} from './style-test/css-module/'
 import {MakeStyleButton} from './style-test/make-style/'
 import {StyledComponentButton} from './style-test/styled-component/'
-
+import {ParentAAAAA} from './immutable/parent'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        hhh
+        {/* hhh
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -25,9 +25,9 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
-      <div>
+      {/* <div>
         sss
         <Counter />
         <br />
@@ -48,7 +48,8 @@ function App() {
       <div>
         <MakeStyleButton />
       </div>
-      <StyledComponentButton />
+      <StyledComponentButton /> */}
+      <ParentAAAAA />
     </div>
   );
 }
